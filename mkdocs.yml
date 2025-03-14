@@ -1,3 +1,42 @@
-site_name: My Docs
+site_name: 哈工大航模协会火箭组
 theme:
-  name: material    #更多的MkDocs主题在这里，此处选用了material主题 https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+  name: material            # 更多的MkDocs主题参看网页，此处选用了material主题 https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+  icon:
+    logo: material/rocket   # 图标设置
+  language: zh              # 更改语言
+  palette:
+    # 明亮模式
+    - scheme: default
+      primary: indigo       # 更改横幅颜色
+      toggle:
+        icon: material/brightness-7 
+        name: 切换到暗色模式
+    # 暗色模式
+    - scheme: slate
+      primary: black        # 更改横幅颜色
+      toggle:
+        icon: material/brightness-3
+        name: 切换到明亮模式
+  font:
+    text: Roboto            # 字体设置 
+  
+  features:
+    - navigation.top        # 返回顶部按钮
+    - navigation.tabs       # 顶部分类标签
+    - search.highlight      # 搜索结果高亮显示
+
+copyright: © 1990 - 2025 哈尔滨工业大学航模协会 All Rights Reserved
+
+
+nav:                        # 定义文章的顺序与链接
+
+- 技术:
+  - 外场箱整理: 技术文章\外场箱整理.md
+  - Solidworks使用小技巧: 技术文章\Solidworks.md
+
+- 安全:
+  - 日常安全守则: 安全须知\日常安全.md
+  - 外场安全: 安全须知\外场安全.md
+
+- 入门:
+  - 火箭组介绍: 首页文章\总体介绍.md
