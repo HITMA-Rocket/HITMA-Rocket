@@ -1,5 +1,5 @@
 site_name: 哈工大航模协会火箭组
-theme:
+theme:                      # 主题
   name: material            # 更多的MkDocs主题参看网页，此处选用了material主题 https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
   icon:
     logo: material/rocket   # 图标设置
@@ -25,11 +25,10 @@ theme:
     - navigation.tabs       # 顶部分类标签
     - search.highlight      # 搜索结果高亮显示
 
-copyright: © 1990 - 2025 哈尔滨工业大学航模协会 All Rights Reserved
-
+plugins:
+  - glightbox
 
 nav:                        # 定义文章的顺序与链接
-
 - 技术:
   - 外场箱整理: 技术文章\外场箱整理.md
   - Solidworks使用小技巧: 技术文章\Solidworks.md
@@ -40,3 +39,10 @@ nav:                        # 定义文章的顺序与链接
 
 - 入门:
   - 火箭组介绍: 首页文章\总体介绍.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption       # 便捷的图像标题编辑
+
+copyright: © 1990 - 2025 哈尔滨工业大学航模协会 All Rights Reserved
